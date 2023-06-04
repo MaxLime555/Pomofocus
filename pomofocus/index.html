@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomofocus</title>
+</head>
+<body>
+      <div class="preview">
+        <p>Pomofocus — это онлайн-инструмент, который помогает
+        управлять временем и повышать производительность. 
+        Он основан на технике «помодоро», которая предполагает 
+        работу в течение определенного периода времени (обычно 25 минут)
+        с последующим коротким перерывом (обычно 5 минут), и более длинным 
+        перерывом (обычно 15-30 минут) после каждой четверки таких периодов.
+        </p>
+        <p>
+        Вы можете изменить текст задачи, нажав клавишу "Enter" 
+        или перейдя на другой элемент на странице. Если вы нажмете клавишу 
+        "Esc", то изменения не сохранятся и задача вернется к исходному тексту.
+        </p>
+        <p>
+        В случае, если вы укажете отрицательные значения, они автоматически станут нулевыми.
+        </p>
+      </div>
+
+      <div id="timer">
+        <span id="minutes">25</span>
+        <span id="seconds">00</span>
+      </div>
+      
+      <div id="task-list">
+        <h2>Задачи</h2>
+        <ul id="tasks"></ul>
+        <input type="text" id="task-input" placeholder="Добавить задачу">
+        <button id="add-task">Добавить</button>
+      </div>
+      
+      <div id="settings">
+        <label for="pomodoro-count">Количество помодоро:</label>
+        <input type="number" id="pomodoro-count" value="25">
+      
+        <label for="short-break">Короткий перерыв (мин):</label>
+        <input type="number" id="short-break" value="5">
+      
+        <label for="long-break">Длинный перерыв (мин):</label>
+        <input type="number" id="long-break" value="15">
+      </div>
+      
+      <button id="start">Старт</button>
+      <button id="pause">Пауза</button>
+      <button id="reset">Сброс</button>
+      <button id="complete-task">Задача выполнена</button>
+    <script src="script.js"></script>
+</body>
+</html>
